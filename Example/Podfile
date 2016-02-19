@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'HYFoundation_Example', :exclusive => true do
+  pod 'HYFoundation', :path => '../'
+end
+
+target 'HYFoundation_Tests', :exclusive => true do
+  pod 'HYFoundation', :path => '../'
+
+  
+end
