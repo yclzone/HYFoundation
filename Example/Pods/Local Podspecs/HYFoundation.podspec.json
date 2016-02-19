@@ -1,0 +1,25 @@
+{
+  "name": "HYFoundation",
+  "version": "0.1.0",
+  "summary": "A short description of HYFoundation.",
+  "description": "",
+  "homepage": "https://github.com/yclzone/HYFoundation",
+  "license": "MIT",
+  "authors": {
+    "yclzone": "yclzone@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/yclzone/HYFoundation.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "HYFoundation": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
