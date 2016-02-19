@@ -1,5 +1,5 @@
 PODS:
-  - HYFoundation (0.1.0)
+  - HYFoundation (0.1.1)
 
 DEPENDENCIES:
   - HYFoundation (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HYFoundation: 0dbc4e44e2c2656283cf7473501292433d79b318
+  HYFoundation: e4cd6ee98dbe79c622fb1bc017a9881c021e0780
 
 COCOAPODS: 0.39.0

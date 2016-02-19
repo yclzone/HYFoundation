@@ -27,7 +27,7 @@
     NSDictionary *dict2 = @{@"band" : @"Smartisan",
                             @"model" : @"T2"};
     
-    NSArray *numbs = [NSArray hy_arrayWithIntegerFrom:1 to:9 step:2];
+    NSArray *numbs = [NSArray hy_arrayWithIntegerFrom:1 to:9 step:-2];
     
     NSArray *array = @[dict, dict2, numbs];
     
