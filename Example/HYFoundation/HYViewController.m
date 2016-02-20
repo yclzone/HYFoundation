@@ -67,6 +67,9 @@
     [self.view addSubview:label];
     
     
+    NSLog(@"%@", [@"     \n\raa adf adf adf adsfdsfs   asdf    \r\n" hy_stringByTrimmingWhitespaceAndNewline]);
+    NSLog(@"xx");
+    
     
 }
 

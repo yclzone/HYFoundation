@@ -10,6 +10,18 @@
 
 @implementation NSString (HYExtensions)
 
+- (NSString *)hy_stringByTrimmingWhitespaceAndNewline {
+    NSString *temp = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    temp = [temp stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    return temp;
+}
+
+- (NSString *)hy_stringByRemovingWhitespaceAndNewline {
+    NSString *temp = [self stringByReplacingOccurrencesOfString:@" " withString:@""];
+    temp = [temp stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    temp = [temp stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    return temp;
+}
 @end
 
 
@@ -27,6 +39,7 @@
         return nil;
     }
 }
+
 @end
 
 @implementation NSString (HYVersion)
