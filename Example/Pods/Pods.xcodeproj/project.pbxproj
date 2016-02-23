@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0394113E1C7C4CC60091FA7A /* NSDictionary+HYURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0394113C1C7C4CC60091FA7A /* NSDictionary+HYURL.h */; };
+		0394113F1C7C4CC60091FA7A /* NSDictionary+HYURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0394113D1C7C4CC60091FA7A /* NSDictionary+HYURL.m */; };
 		112FF553099EB2B37A887B1E7F963BB2 /* NSObject+HYPropertyKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F897F8C24351E18B99C03135591DAB3 /* NSObject+HYPropertyKeys.m */; };
 		21BCD471042D2DB9D76A51CB2F200016 /* Pods-HYFoundation_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA35884AFB425158A7DE25B51AEAF3 /* Pods-HYFoundation_Tests-dummy.m */; };
 		3604858B3CDFB877B74CAF1A4FE79AB2 /* NSObject+HYJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 8322F7BCE3F6D070592188D74BFA9B55 /* NSObject+HYJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0394113C1C7C4CC60091FA7A /* NSDictionary+HYURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HYURL.h"; sourceTree = "<group>"; };
+		0394113D1C7C4CC60091FA7A /* NSDictionary+HYURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HYURL.m"; sourceTree = "<group>"; };
 		09C66D92DC384246C4E24E0BA58117E9 /* Pods_HYFoundation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYFoundation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AEA35884AFB425158A7DE25B51AEAF3 /* Pods-HYFoundation_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HYFoundation_Tests-dummy.m"; sourceTree = "<group>"; };
 		19CE2124CA94C093D1B96F8ECFA9022B /* NSAttributedString+HYItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+HYItem.m"; sourceTree = "<group>"; };
@@ -207,6 +211,8 @@
 				6F897F8C24351E18B99C03135591DAB3 /* NSObject+HYPropertyKeys.m */,
 				9F88AEABEB66784AC934E8E0D4FB3D01 /* NSString+HYExtensions.h */,
 				66FD67684C1EFC3626D34765DE594E19 /* NSString+HYExtensions.m */,
+				0394113C1C7C4CC60091FA7A /* NSDictionary+HYURL.h */,
+				0394113D1C7C4CC60091FA7A /* NSDictionary+HYURL.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -291,6 +297,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0394113E1C7C4CC60091FA7A /* NSDictionary+HYURL.h in Headers */,
 				F05AB4A922DE4173825B7732730D90D2 /* HYFoundation-umbrella.h in Headers */,
 				F29741620BE3B200C884501CEFBC7484 /* HYFoundation.h in Headers */,
 				7FE3AE0FF0EF2FD6CBEB09ECF90AC494 /* NSArray+HYNumberString.h in Headers */,
@@ -464,6 +471,7 @@
 				BE9C4C46A10CAA90BFAA8B4D5B188F46 /* NSAttributedString+HYItem.m in Sources */,
 				D6862D79D252CB7F98C6AB4E8683CE83 /* NSObject+HYJSON.m in Sources */,
 				112FF553099EB2B37A887B1E7F963BB2 /* NSObject+HYPropertyKeys.m in Sources */,
+				0394113F1C7C4CC60091FA7A /* NSDictionary+HYURL.m in Sources */,
 				891022B1ED2BFF4B9843326648B415FB /* NSString+HYExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

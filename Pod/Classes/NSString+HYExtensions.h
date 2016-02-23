@@ -26,9 +26,6 @@
 @end
 
 
-
-
-
 @interface NSString (HYVersion)
 
 /**
@@ -44,4 +41,16 @@
  *  @return APP Build号
  */
 + (NSString *)hy_build;
+@end
+
+typedef NS_ENUM(NSInteger, MD5Type) {
+    MD5Type32BitLowercase = 0,
+    MD5Type32BitUppercase = 1,
+    MD5Type16BitLowercase = 2,
+    MD5Type16BitUppercase = 3,
+};
+
+@interface NSString (HYMD5)
+- (NSString *)hy_md5;
+- (NSString *)hy_md5WithType:(MD5Type)type;
 @end
