@@ -1,6 +1,6 @@
 {
   "name": "HYFoundation",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "summary": "HYFoundation is a collection of common used categories of Foundation.",
   "description": "HYFoundation is a collection of common used categories of Foundation.Such as NSObject, NSString, NSArray, NSMutableAttributeString and so on;",
   "homepage": "https://github.com/yclzone/HYFoundation",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/yclzone/HYFoundation.git",
-    "tag": "0.1.2"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "7.0"

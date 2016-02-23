@@ -31,11 +31,15 @@
     
     NSArray *array = @[dict, dict2, numbs];
     
-    NSLog(@"%@", [NSString hy_stringWithObject:array type:HYJSONTypePlant]);
+    [array hy_JSONSerializationWithType:HYJSONTypePlant
+                            JSONHandler:^(NSString *JSONString, NSError *error) {
+                                NSLog(@"JSON: %@", JSONString);
+                            }];
     
-    NSLog(@"%@", [NSString hy_stringWithObject:[HYStringStyle hy_propertyKeys] type:HYJSONTypeFormated]);
-    
+    /** Version */
     NSLog(@"version: %@.%@", [NSString hy_version], [NSString hy_build]);
+    
+    /** NSAttributedString */
     HYStringStyle *style1 = ({
         HYStringStyle  *style = [HYStringStyle styleWithString:@"www."
                                                           font:[UIFont systemFontOfSize:14]
@@ -55,7 +59,7 @@
         style;
     });
     
-    NSAttributedString *attrbString = [NSAttributedString hy_stringByAppendingFormat:@[style1, style2, style3]];
+    NSAttributedString *attrbString = [NSAttributedString hy_attributedStringWithFormats:@[style1, style2, style3]];
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
     label.attributedText = attrbString;

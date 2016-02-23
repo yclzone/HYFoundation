@@ -3,6 +3,7 @@
 #import "HYFoundation.h"
 #import "NSArray+HYNumberString.h"
 #import "NSAttributedString+HYItem.h"
+#import "NSObject+HYJSON.h"
 #import "NSObject+HYPropertyKeys.h"
 #import "NSString+HYExtensions.h"
 
