@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDictionary (HYURL)
-
+- (NSString *)hy_queryString;
 @end
