@@ -25,5 +25,6 @@ typedef NS_ENUM(NSInteger, HYJSONType) {
 typedef void (^HYJSONHandler)(NSString *JSONString, NSError *error);
 
 @interface NSObject (HYJSON)
+- (NSString *)hy_JSONStringWithType:(HYJSONType)opt;
 - (void)hy_JSONSerializationWithType:(HYJSONType)opt JSONHandler:(HYJSONHandler)handler;
 @end
