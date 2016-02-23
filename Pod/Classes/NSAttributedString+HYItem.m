@@ -21,7 +21,7 @@
 @end
 
 @implementation NSAttributedString (HYItem)
-+ (NSAttributedString *)hy_stringByAppendingFormat:(NSArray<HYStringStyle *> *)styles {
++ (NSAttributedString *)hy_attributedStringWithFormats:(NSArray<HYStringStyle *> *)styles {
     NSMutableAttributedString *strM = [[NSMutableAttributedString alloc] init];
     for (HYStringStyle *style in styles) {
         

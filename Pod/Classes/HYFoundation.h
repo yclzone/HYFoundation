@@ -13,5 +13,6 @@
 #import "NSAttributedString+HYItem.h"
 #import "NSArray+HYNumberString.h"
 #import "NSObject+HYPropertyKeys.h"
+#import "NSObject+HYJSON.h"
 
 #endif /* HYFoundation_h */

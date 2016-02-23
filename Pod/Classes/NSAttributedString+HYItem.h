@@ -23,5 +23,5 @@
 
 @interface NSAttributedString (HYItem)
 
-+ (NSAttributedString *)hy_stringByAppendingFormat:(NSArray<HYStringStyle *> *)styles;
++ (NSAttributedString *)hy_attributedStringWithFormats:(NSArray<HYStringStyle *> *)styles;
 @end

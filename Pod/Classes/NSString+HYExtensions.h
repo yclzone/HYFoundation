@@ -25,33 +25,8 @@
 - (NSString *)hy_stringByRemovingWhitespaceAndNewline;
 @end
 
-/**
- *  JSON字符串样式
- */
-typedef NS_ENUM(NSInteger, HYJSONType) {
-    /**
-     *  压缩过的字符串
-     */
-    HYJSONTypePlant = 0,
-    /**
-     *  格式化的字符串
-     */
-    HYJSONTypeFormated = NSJSONWritingPrettyPrinted
-};
 
-@interface NSString (HYJSON)
 
-/**
- *  NSString, NSNumber, NSArray, NSDictionary, or NSNull转JSON
- *
- *  @param object 待转换的对象
- *  @param opt    选项
- *
- *  @return JSON字符串
- */
-+ (NSString *)hy_stringWithObject:(id)object type:(HYJSONType)opt;
-
-@end
 
 
 @interface NSString (HYVersion)
