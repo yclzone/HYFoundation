@@ -36,13 +36,18 @@
                                 NSLog(@"JSON: %@", JSONString);
                             }];
     
+    NSString *JSONString = @"{\"love_num\":2,\"is_love\":0,\"is_fav\":0,\"page_size\":1,\"counts\":5,\"comment_array\":[{\"comment_id\":620,\"mem_userid\":355,\"mem_headpic\":\"http://bg-controller.hanyouapp.com/upload/201603/15/17-32-05_7436_100.jpg\",\"mem_name\":\"zjw7sky\",\"content\":\"Haiti\",\"create_time\":1458112776,\"reply_mem_name\":\"\"},{\"comment_id\":621,\"mem_userid\":355,\"mem_headpic\":\"http://bg-controller.hanyouapp.com/upload/201603/15/17-32-05_7436_100.jpg\",\"mem_name\":\"zjw7sky\",\"content\":\"Hhh\",\"create_time\":1458112786,\"reply_mem_name\":\"zjw7sky\"},{\"comment_id\":622,\"mem_userid\":355,\"mem_headpic\":\"http://bg-controller.hanyouapp.com/upload/201603/15/17-32-05_7436_100.jpg\",\"mem_name\":\"zjw7sky\",\"content\":\"Zai ahi yi ci\",\"create_time\":1458112819,\"reply_mem_name\":\"zjw7sky\"},{\"comment_id\":623,\"mem_userid\":356,\"mem_headpic\":\"http://bg-controller.hanyouapp.com/upload/201603/16/18-29-47_4131_100.jpg\",\"mem_name\":\"yclzone\",\"content\":\"wow 图哦哦哦哦\",\"create_time\":1458136353,\"reply_mem_name\":\"zjw7sky\"},{\"comment_id\":624,\"mem_userid\":324,\"mem_headpic\":\"http://bg-controller.hanyouapp.com/upload/201603/16/11-04-57_6156_100.jpg\",\"mem_name\":\"天天天\",\"content\":\"ggg\",\"create_time\":1458182639,\"reply_mem_name\":\"\"}],\"type\":true,\"msg\":\"获取成功\",\"errorCode\":20101}";
+    
+    NSDictionary *JSONObj = [JSONString hy_JSONObject];
+    NSLog(@"JSON Object: %@", JSONObj);
+    
     /** Version */
     NSLog(@"version: %@.%@", [NSString hy_version], [NSString hy_build]);
     
     /** NSAttributedString */
     HYStringStyle *style1 = ({
         HYStringStyle  *style = [HYStringStyle styleWithString:@"www."
-                                                          font:[UIFont systemFontOfSize:14]
+                                                           font:[UIFont systemFontOfSize:14]
                                                          color:[UIColor blueColor]];
         style;
     });
@@ -73,6 +78,11 @@
     
     NSLog(@"%@", [@"     \n\raa adf adf adf adsfdsfs   asdf    \r\n" hy_stringByTrimmingWhitespaceAndNewline]);
     NSLog(@"xx");
+    
+    NSString *email = @"yclzone@xxx.com";
+    BOOL isEmail = [email hy_isValidEmail];
+    
+    NSLog(@"dd");
     
     
 }

@@ -23,9 +23,12 @@
  *  @return 新字符串
  */
 - (NSString *)hy_stringByRemovingWhitespaceAndNewline;
+
+- (BOOL)hy_isValidPhoneNumber;
+- (BOOL)hy_isValidEmail;
 @end
 
-
+#pragma mark - 版本号
 @interface NSString (HYVersion)
 
 /**
@@ -43,6 +46,7 @@
 + (NSString *)hy_build;
 @end
 
+#pragma mark - MD5
 typedef NS_ENUM(NSInteger, MD5Type) {
     MD5Type32BitLowercase = 0,
     MD5Type32BitUppercase = 1,
@@ -53,4 +57,8 @@ typedef NS_ENUM(NSInteger, MD5Type) {
 @interface NSString (HYMD5)
 - (NSString *)hy_md5;
 - (NSString *)hy_md5WithType:(MD5Type)type;
+@end
+
+@interface NSString (HYJSON)
+- (id)hy_JSONObject;
 @end
