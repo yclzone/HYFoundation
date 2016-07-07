@@ -20,6 +20,7 @@
     for (NSString *key in keys) {
         queryString = [queryString stringByAppendingFormat:@"&%@=%@", key, self[key]];
     }
+    
     if (queryString.length > 1) {
         queryString = [queryString substringFromIndex:1];
     }
