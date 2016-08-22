@@ -1,0 +1,16 @@
+PODS:
+  - HYFoundation (0.1.0)
+
+DEPENDENCIES:
+  - HYFoundation (from `../`)
+
+EXTERNAL SOURCES:
+  HYFoundation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HYFoundation: 2c1f2379fd4a98f239e325f9c57ce3c5c0edcd9e
+
+PODFILE CHECKSUM: 90c925a707de8f4514b67c2b8fda466e2d3860b8
+
+COCOAPODS: 1.1.0.beta.1
