@@ -26,6 +26,13 @@
 
 - (BOOL)hy_isValidPhoneNumber;
 - (BOOL)hy_isValidEmail;
+
+/**
+ *  是否只包含字母 数字 汉字
+ *
+ *  @return 是否只包含字母 数字 汉字
+ */
+- (BOOL)hy_isValidText;
 @end
 
 #pragma mark - 版本号
