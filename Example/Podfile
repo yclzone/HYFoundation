@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HYFoundation_Example' do
+  pod 'HYFoundation', :path => '../'
+
+  target 'HYFoundation_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
