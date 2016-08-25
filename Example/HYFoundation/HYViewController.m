@@ -20,7 +20,32 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+//    NSString
     
+    
+    
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if ([@"😄" hy_containsEmoji]) {
+        NSLog(@"含有表情符号");
+    }
+    
+    if ([@"yclzone@xxx.com" hy_isValidEmail]) {
+        NSLog(@"合法邮箱地址");
+    }
+}
+
+
+- (void)demo {
     NSDictionary *dict = @{@"action" : @"xxx",
                            @"userid" : @5};
     
@@ -83,14 +108,5 @@
     BOOL isEmail = [email hy_isValidEmail];
     
     NSLog(@"dd");
-    
-    
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end

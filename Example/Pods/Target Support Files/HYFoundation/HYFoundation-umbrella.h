@@ -6,6 +6,7 @@
 #import "NSDictionary+HYURL.h"
 #import "NSObject+HYJSON.h"
 #import "NSObject+HYPropertyKeys.h"
+#import "NSString+HYEmoji.h"
 #import "NSString+HYExtensions.h"
 
 FOUNDATION_EXPORT double HYFoundationVersionNumber;
