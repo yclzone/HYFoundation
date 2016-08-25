@@ -10,6 +10,7 @@
 #define HYFoundation_h
 
 #import "NSString+HYExtensions.h"
+#import "NSString+HYEmoji.h"
 #import "NSAttributedString+HYItem.h"
 #import "NSArray+HYNumberString.h"
 #import "NSObject+HYPropertyKeys.h"
