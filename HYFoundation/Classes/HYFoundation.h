@@ -16,5 +16,6 @@
 #import "NSObject+HYPropertyKeys.h"
 #import "NSObject+HYJSON.h"
 #import "NSDictionary+HYURL.h"
+#import "NSDictionary+HYJSON.h"
 
 #endif /* HYFoundation_h */

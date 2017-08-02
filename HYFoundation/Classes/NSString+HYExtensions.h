@@ -27,16 +27,6 @@
 - (BOOL)hy_isValidPhoneNumber;
 - (BOOL)hy_isValidEmail;
 
-
-/**
- 判断字符串是否只包含字符、数字、下划线
-
- @param min 最小长度
- @param max 最大长度
- @return 是否包含
- */
-- (BOOL)hy_isValidNameWithMin:(NSInteger)min max:(NSInteger)max;
-
 /**
  *  是否只包含字母 数字 汉字
  *

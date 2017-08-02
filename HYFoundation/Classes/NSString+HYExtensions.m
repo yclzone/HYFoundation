@@ -89,17 +89,6 @@
     }
 }
 
-- (BOOL)hy_isValidNameWithMin:(NSInteger)min max:(NSInteger)max {
-    
-    min = MIN(min, max);
-    max = MAX(min, max);
-    
-    NSString *numberAndLetterAnd_ = [NSString stringWithFormat:@"[a-zA-Z0-9_]{%zd,%zd}", min, max];
-    
-    NSPredicate *pre = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", numberAndLetterAnd_];
-    return [pre evaluateWithObject:self];
-}
-
 - (BOOL)hy_isValidText {
     NSString *emailRegex = @"[A-Z0-9a-z\u4e00-\u9fa5]+";
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
