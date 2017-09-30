@@ -6,11 +6,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   HYFoundation:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
   HYFoundation: bc8e6d2eb4d1210169d88479c7bd5be4ab2cdf6c
 
 PODFILE CHECKSUM: 90c925a707de8f4514b67c2b8fda466e2d3860b8
 
-COCOAPODS: 1.1.0.beta.1
+COCOAPODS: 1.2.1
